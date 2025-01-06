@@ -4,6 +4,7 @@ import pic1 from "/public/Images/centerpic14.jpg"
 import pic2 from "/public/Images/centerpic15.jpg"
 import pic3 from "/public/Images/centerpic16.jpg"
 import pic4 from "/public/Images/centerpic17.jpg"
+import Comments from "../Comment/page"
 
 export default function Fourth(){
  return <div>
@@ -33,6 +34,8 @@ export default function Fourth(){
      <Image src={pic4} alt="" className="w-[400px]" />
      <p className="w-[350px] ml-[60px] mt-[150px]">Similar to the worksheet above, this activity is ideal for children in fourth through eighth grade. Each slice of the pie represents something they’re thankful for, from a favorite memory to a comforting smell. With prompts for unique reflections on people, objects, activities, and more, kids will enjoy expressing gratitude in creative ways. </p>
    </div>
-   <hr className="w-[100px] border-[1px] border-gray-500 opacity-70 mt-[25px] mb-[30px] ml-[700px]" />
+   <hr className="w-[100px] border-[1px] border-gray-500 opacity-70 mt-[25px] mb-[120px] ml-[700px]" />
+
+   <Comments />
 </div>
 }

@@ -3,6 +3,7 @@ import pic from "/public/Images/mainpicture1.png"
 import pic2 from "/public/Images/centerpic1.png"
 import pic3 from "/public/Images/centerpic2.jpg"
 import pic4 from "/public/Images/centerpic3.jpg"
+import Comments from "../Comment/page"
 
 export default function first(){
  return <div>
@@ -23,6 +24,8 @@ export default function first(){
     <p className="font-sans text-[30px] font-semibold ml-[50px] mt-[40px]">Take time to recharge</p>
     <Image src={pic4} alt="" className="w-[1530px] h-[700px]" />
     <p className="w-[1400px] text-[17px] font-sans ml-[40px] mt-[70px]">Don’t forget to give yourself a well-deserved break! Whether it’s going for a walk, getting lost in a great book, or exploring a new hobby, moments of relaxation can refuel your creativity. By taking care of your physical and mental well-being, you’ll return to the classroom refreshed, and ready to better support your students. </p>
-    <hr className="w-[100px] border-[1px] border-gray-500 opacity-70 mt-[25px] mb-[30px] ml-[700px]" />
+    <hr className="w-[100px] border-[1px] border-gray-500 opacity-70 mt-[25px] mb-[120px] ml-[700px]" />
+
+   <Comments  />
 </div>
 }

@@ -9,6 +9,7 @@ import pic7 from "/public/Images/centerpic10.jpg"
 import pic8 from "/public/Images/centerpic11.jpg"
 import pic9 from "/public/Images/centerpic12.jpg"
 import pic10 from "/public/Images/centerpic13.jpg"
+import Comments from "../Comment/page"
 
 export default function Third(){
  return <div>
@@ -43,6 +44,8 @@ export default function Third(){
    <p className="font-sans text-[30px] font-semibold ml-[50px] mt-[40px]">9. Play with your food</p>
    <Image src={pic10} alt="" className="ml-[80px] mt-[50px]" />
    <p className="font-sans text-[17px] mt-[50px] w-[1000px] ml-[80px]">Don’t toss out your pumpkins just yet! Instead, create a fall mosaic with pumpkin seeds. Have your child arrange 50 dry seeds on a piece of paper in the shape of a pumpkin. They can also practice their math skills by counting how many seeds it takes to create the orange part of the pumpkin, the brown part for the stem, and the green for the leaf. Let your kids paint the seeds for each color and allow them to dry. Finally, glue them to a sheet of paper to complete their festive work of art!</p>
-   <hr className="w-[100px] border-[1px] border-gray-500 opacity-70 mt-[25px] mb-[30px] ml-[700px]" />
+   <hr className="w-[100px] border-[1px] border-gray-500 opacity-70 mt-[25px] mb-[120px] ml-[700px]" />
+
+   <Comments />
 </div>
 }
