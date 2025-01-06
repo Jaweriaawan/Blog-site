@@ -12,6 +12,9 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      boxShadow: {
+          blur: "0px 5px 15px rgba(255, 0, 150, 0.3)"
+      },
     },
   },
   plugins: [],

@@ -1,101 +1,66 @@
-import Image from "next/image";
+import Image from "next/image"
+import pic from "/public/Images/mainpicture1.png"
+import pic2 from "/public/Images/mainpicture2.jpg"
+import pic3 from "/public/Images/mainpicture3.jpg"
+import pic4 from "/public/Images/mainpicture4.jpg"
+import Link from "next/link"
 
-export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+export default function Home(){ 
+ return <div className="mt-[80px]">
+  <p className="text-sky-500 text-[20px] font-semibold ml-[100px] mb-[20px]">LATEST POSTS</p>
+  <div className="ml-[100px]">
+    <Link href="first">
+    <div className="w-[960px] h-[300px] border-[2px] border-gray-300 flex gap-[150px] rounded-lg">
+       <Image src={pic} alt="" className="w-[400px] h-[250px] ml-[20px] mt-[25px] rounded" />
+       <div className="mt-[80px]">
+         <p className="w-[360px] font-sans text-[20px] font-bold hover:opacity-60">Tackling the autumn slump: Teacher tips for when you hit the wall</p>
+         <p className="text-gray-300 mt-[10px]">january 2, 2025</p>
+         <p className="font-sans text-[17px] w-[370px] mt-[10px]">The back-to-school buzz has faded, and teachers and students have fallen into their routines. …</p>
+       </div>
+     </div> 
+    </Link>
+
+    <hr className="w-[950px] border-[1px] border-gray-500 opacity-40 mt-[40px] mb-[40px]" />
+
+    <Link href="fourth">
+    <div className="w-[960px] h-[300px] border-[2px] border-gray-300 flex gap-[150px] rounded-lg">
+       <Image src={pic4} alt="" className="w-[400px] h-[250px] ml-[20px] mt-[25px] rounded" />
+       <div className="mt-[80px]">
+         <p className="w-[360px] font-sans text-[20px] font-bold hover:opacity-60">5 ways to help kids practice gratitude</p>
+         <p className="text-gray-300 mt-[10px]">january 2, 2025</p>
+         <p className="font-sans text-[17px] w-[370px] mt-[10px]">Gratitude is more than just saying “thank you!” It’s a powerful practice that helps …</p>
+       </div>
+     </div> 
+    </Link>
+
+    <hr className="w-[950px] border-[1px] border-gray-500 opacity-40 mt-[40px] mb-[40px]" />
+
+    <Link href="third">
+    <div className="w-[960px] h-[300px] border-[2px] border-gray-300 flex gap-[150px] rounded-lg">
+       <Image src={pic3} alt="" className="w-[400px] h-[250px] ml-[20px] mt-[25px] rounded" />
+       <div className="mt-[80px]">
+         <p className="w-[360px] font-sans text-[20px] font-bold hover:opacity-60">Hands-on autumn activities for kids</p>
+         <p className="text-gray-300 mt-[10px]">january 2, 2025</p>
+         <p className="font-sans text-[17px] w-[370px] mt-[10px]">Halloween may be over but our love for pumpkins is still going strong and …</p>
+       </div>
+     </div> 
+    </Link>
+
+    <hr className="w-[950px] border-[1px] border-gray-500 opacity-40 mt-[40px] mb-[40px]" />
+
+    <Link href="second">
+    <div className="w-[960px] h-[300px] border-[2px] border-gray-300 flex gap-[150px] rounded-lg">
+       <Image src={pic2} alt="" className="w-[400px] h-[250px] ml-[20px] mt-[25px] rounded" />
+       <div className="mt-[80px]">
+         <p className="w-[360px] font-sans text-[20px] font-bold hover:opacity-60">New winter holiday worksheets for middle schoolers</p>
+         <p className="text-gray-300 mt-[10px]">january 2, 2025</p>
+         <p className="font-sans text-[17px] w-[370px] mt-[10px]">Celebrate the season with Education.com’s new winter holiday worksheets for middle schoolers! These activities …</p>
+       </div>
+     </div> 
+    </Link>
+  </div>
+
+  <hr className="w-[100px] border-[1px] border-gray-500 opacity-70 mt-[45px] mb-[50px] ml-[550px]" />
+</div>    
 }
