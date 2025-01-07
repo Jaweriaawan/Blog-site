@@ -65,11 +65,11 @@ const Comments: React.FC = () => {
           onKeyDown={handleKeyEnter}
           ref={commentRef}
           placeholder="Add a comment..."
-          className="text-gray-400 text-[17px] lg:pl-[20px] ex:pl-[10px] pr-[40px] border-b-[1px] border-cyan-600 lg:ml-[60px] lg:mt-[100px] ex:mt-[120px] h-[35px] lg:w-[1300px] ex:w-full outline-none "
+          className="text-gray-400 text-[17px] lg:pl-[20px] ex:pl-[10px] lg:pr-[40px] border-b-[1px] border-cyan-600 lg:ml-[60px] lg:mt-[100px] ex:mt-[120px] h-[35px] lg:w-[1300px] ex:w-full outline-none "
         />
         <button
           onClick={addComment}
-          className="lg:w-[180px] ex:w-[140px] h-[50px] text-white bg-cyan-700 hover:opacity-70 rounded-lg lg:ml-[1150px] mt-[20px]"
+          className="lg:w-[180px] ex:w-[140px] h-[50px] text-white bg-cyan-700 hover:opacity-70 rounded-lg lg:ml-[1150px] ex:ml-[10px] mt-[20px]"
         >
           Comment
         </button>
@@ -77,12 +77,12 @@ const Comments: React.FC = () => {
 
       <ul className='mt-[80px]'>
         {comments.length === 0 ? (
-          <p className="text-center mt-[120px] lg:text-[17px] ex:text-[13px] mb-[100px]">No Comments Yet</p>
+          <p className="text-center lg:w-full ex:w-full mt-[120px] lg:text-[17px] ex:text-[13px] mb-[100px]">No Comments Yet</p>
         ) : (
           comments.map((comment) => (
             <li
               key={comment.id}
-              className="lg:w-[1200px] ex:w-full h-auto lg:ml-[150px] bg-cyan-800 flex justify-between rounded-lg text-white pl-[20px] py-[10px] px-[20px] text-[17px] font-sans mt-[12px] ex:ml-[10px] lg:mr-0 ex:mr-[10px]"
+              className="lg:w-[1200px] ex:w-full lg:ml-[150px] bg-cyan-800 flex justify-between rounded-lg text-white lg:pl-[20px] py-[10px] px-[20px] text-[17px] font-sans mt-[12px] ex:ml-[6px] lg:mr-0 ex:mr-[10px]"
             >
               <span>{comment.title}</span>
               <IoTrashOutline

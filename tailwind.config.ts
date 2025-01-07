@@ -8,15 +8,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      boxShadowColor: {
+        'grays' : '0 4px 6px rgba(0, 0, 0, 0.5)',
+        'blackish': '0 6px 10px rgba(0, 0, 0, 0.8)',
+      },
       screens: {
-         'ex' : '180px'
+         'ex' : '270px'
       },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-      },
-      boxShadow: {
-          blur: "0px 5px 15px rgba(255, 0, 150, 0.3)"
       },
     },
   },
