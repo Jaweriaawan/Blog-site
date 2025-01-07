@@ -7,12 +7,12 @@ import Link from "next/link"
 
 
 export default function Home(){ 
- return <div className="mt-[80px]">
+ return <div className="mt-[80px] ex:w-full">
   <p className="text-sky-500 text-[22px] lg:font-semibold ex:font-bold lg:ml-[100px] ex:ml-[10px] mb-[20px]">LATEST POSTS</p>
   <div className="lg:ml-[100px]">
     <Link href="first">
     <div className="lg:w-[960px] lg:h-[300px] ex:w-full ex:h-[560px] ex:shadow-blackish lg:shadow-none border-[2px] blum border-gray-300 lg:flex gap-[150px] rounded-lg">
-       <Image src={pic} alt="" className="w-[400px] h-[250px] lg:ml-[20px] ex:ml-[5px] lg:mt-[25px] ex:mt-[15px] rounded" />
+       <Image src={pic} alt="" className="lg:w-[400px] ex:w-[370px] h-[250px] lg:ml-[20px] ex:ml-[8px] lg:mt-[25px] ex:mt-[15px] rounded" />
        <div className="lg:ml-0 ex:ml-[25px] mt-[80px]">
          <p className="w-[360px] font-sans text-[20px] font-bold hover:opacity-60">Tackling the autumn slump: Teacher tips for when you hit the wall</p>
          <p className="text-gray-300 mt-[10px]">january 2, 2025</p>
@@ -25,7 +25,7 @@ export default function Home(){
 
     <Link href="fourth">
     <div className="lg:w-[960px] lg:h-[300px] ex:w-full ex:h-[560px] ex:shadow-blackish lg:shadow-none border-[2px] blum border-gray-300 lg:flex gap-[150px] rounded-lg lg:mt-0 ex:mt-[50px]">
-       <Image src={pic4} alt="" className="w-[400px] h-[250px] ml-[20px] mt-[25px] rounded" />
+       <Image src={pic4} alt="" className="lg:w-[400px] ex:w-[370px] h-[250px] lg:ml-[20px] ex:ml-[8px] lg:mt-[25px] ex:mt-[15px] rounded" />
        <div className="lg:ml-0 ex:ml-[25px] mt-[80px]">
          <p className="w-[360px] font-sans text-[20px] font-bold hover:opacity-60">5 ways to help kids practice gratitude</p>
          <p className="text-gray-300 mt-[10px]">january 2, 2025</p>
@@ -38,7 +38,7 @@ export default function Home(){
 
     <Link href="third">
     <div className="lg:w-[960px] lg:h-[300px] ex:w-full ex:h-[560px] ex:shadow-blackish lg:shadow-none border-[2px] blum border-gray-300 lg:flex gap-[150px] rounded-lg lg:mt-0 ex:mt-[50px]">
-       <Image src={pic3} alt="" className="w-[400px] h-[250px] ml-[20px] mt-[25px] rounded" />
+       <Image src={pic3} alt="" className="lg:w-[400px] ex:w-[370px] h-[250px] lg:ml-[20px] ex:ml-[8px] lg:mt-[25px] ex:mt-[15px] rounded" />
        <div className="lg:ml-0 ex:ml-[25px] mt-[80px]">
          <p className="w-[360px] font-sans text-[20px] font-bold hover:opacity-60">Hands-on autumn activities for kids</p>
          <p className="text-gray-300 mt-[10px]">january 2, 2025</p>
@@ -51,7 +51,7 @@ export default function Home(){
 
     <Link href="second">
     <div className="lg:w-[960px] lg:h-[300px] ex:w-full ex:h-[560px] ex:shadow-blackish lg:shadow-none border-[2px] blum border-gray-300 lg:flex gap-[150px] rounded-lg lg:mt-0 ex:mt-[50px]">
-       <Image src={pic2} alt="" className="w-[400px] h-[250px] ml-[20px] mt-[25px] rounded" />
+       <Image src={pic2} alt="" className="lg:w-[400px] ex:w-[370px] h-[250px] lg:ml-[20px] ex:ml-[8px] lg:mt-[25px] ex:mt-[15px] rounded" />
        <div className="lg:ml-0 ex:ml-[25px] mt-[80px]">
          <p className="w-[360px] font-sans text-[20px] font-bold hover:opacity-60">New winter holiday worksheets for middle schoolers</p>
          <p className="text-gray-300 mt-[10px]">january 2, 2025</p>
@@ -61,6 +61,6 @@ export default function Home(){
     </Link>
   </div>
 
-  <hr className="w-[100px] border-[1px] border-gray-500 opacity-70 mt-[45px] mb-[50px] ml-[550px]" />
+  <hr className="lg:flex ex:hidden w-[100px] border-[1px] border-gray-500 opacity-70 mt-[45px] mb-[50px] ml-[550px]" />
 </div>    
 }
