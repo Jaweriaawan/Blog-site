@@ -7,7 +7,7 @@ import pic4 from "/public/Images/centerpic17.jpg"
 import Comments from "../Comment/page"
 
 export default function Fourth(){
- return <div>
+ return <div className="ex:w-full">
    <p className="lg:text-4xl ex:text-3xl text-cyan-500 font-bold mt-[60px] lg:mb-[100px] ex:mb-[30px] text-center">5 ways to help kids practice gratitude </p>
    <Image src={pic} alt="" className="lg:w-[1530px] lg:h-[750px] ex:w-full" />
    <p className="lg:w-[1400px] ex:w-full lg:text-[17px] ex:text-[13px] font-sans lg:ml-[40px] ex:ml-[10px] lg:mt-[70px] ex:mt-[30px]">Gratitude is more than just saying “thank you!” It’s a powerful practice that helps children develop a positive mindset, improve their emotional well-being, and build stronger relationships. And it’s never too early to start teaching kids the value of gratitude! <br /> <br /> By encouraging them to reflect on the things they’re thankful for, you’re setting the foundation for a lifetime of appreciation and kindness. Here are a few meaningful activities to help your kids practice gratitude in fun and impactful ways.</p>

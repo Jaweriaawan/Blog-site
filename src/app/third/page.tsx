@@ -12,7 +12,7 @@ import pic10 from "/public/Images/centerpic13.jpg"
 import Comments from "../Comment/page"
 
 export default function Third(){
- return <div>
+ return <div className="ex:w-full">
   <p className="lg:text-4xl ex:text-3xl w-full text-cyan-500 font-bold mt-[60px] lg:mb-[100px] ex:mb-[40px] text-center">Hands-on autumn activities for kids</p>
    <Image src={pic} alt="" className="lg:w-[1530px] lg:h-[650px] ex:w-full" />
    <p className="font-sans text-[17px] lg:mt-[40px] ex:mt-[20px] lg:w-[1400px] ex:w-full lg:ml-[50px] ex:ml-[10px]">Halloween may be over but our love for pumpkins is still going strong and November is the perfect time to embrace the last full month of fall. From crafts to games, these pumpkin-themed activities are perfect for families or teachers looking to add a seasonal way to learn and play. </p>

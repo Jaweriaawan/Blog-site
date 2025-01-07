@@ -6,7 +6,7 @@ import pic4 from "/public/Images/centerpic3.jpg"
 import Comments from "../Comment/page"
 
 export default function first(){
- return <div>
+ return <div className="ex:w-full">
     <p className="lg:text-4xl ex:text-3xl text-cyan-500 font-bold mt-[60px] lg:mb-[100px] ex:mb-[50px] text-center">Tackling the autumn slump: Teacher tips for when you hit the wall</p>
     <Image src={pic} alt="" className="lg:w-[1530px] lg:h-[650px] ex:w-full" />
     <p className="font-sans lg:text-[17px] ex:text-[13px] mt-[40px] lg:w-[1400px] ex:w-full lg:pl-[50px] ex:pl-[5px]">The back-to-school buzz has faded, and teachers and students have fallen into their routines. But now, it feels like you’ve hit a wall, with energy and motivation taking a dip. Whether it’s the stress of parent-teacher conferences or the days getting shorter, you’re feeling drained and uninspired. Don’t worry, you’re not alone! Here are some fun and practical tips to help you break through the fall slump. </p>
